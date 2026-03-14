@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The LITS - Simple Version</title>
+    <title>The LITS</title>
     <style>
         body {
             background-color: #03080f;
@@ -12,20 +12,17 @@
             text-align: center;
         }
 
-        /* The Big Title */
         h1 {
             font-size: 5rem;
             margin: 40px 0;
             letter-spacing: 10px;
         }
 
-        /* The Split Container */
         .container {
             display: flex;
             height: 70vh;
         }
 
-        /* Individual Sides */
         .panel {
             flex: 1;
             display: flex;
@@ -36,15 +33,15 @@
             transition: 0.3s;
         }
 
-        /* Left side colors */
         .blue-side { background: linear-gradient(to bottom, #001e3c, #03080f); }
         .blue-side:hover { border-color: #00c8ff; }
 
-        /* Right side colors */
         .gold-side { background: linear-gradient(to bottom, #1e1400, #03080f); }
         .gold-side:hover { border-color: #f5c842; }
 
-        /* Simple Placeholder for Images */
+        .silver-side { background: linear-gradient(to bottom, #2b2b2b, #03080f); }
+        .silver-side:hover { border-color: #9e9e9e; }
+
         .character-box {
             width: 200px;
             height: 300px;
@@ -56,13 +53,12 @@
             border-radius: 8px;
         }
 
-        /* Bottom Nav */
         nav {
             display: flex;
             background: #111;
         }
 
-        nav button {
+        nav a {
             flex: 1;
             padding: 20px;
             background: none;
@@ -70,9 +66,11 @@
             color: #888;
             cursor: pointer;
             text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
         }
 
-        nav button:hover { color: white; background: #222; }
+        nav a:hover { color: white; background: #222; }
     </style>
 </head>
 <body>
@@ -81,29 +79,27 @@
 
     <div class="container">
         <div class="panel blue-side">
-            <div class="character-box">Image 1 Here</div>
-            <h2>BLUE AGENT</h2>
+            <div class="character-box"></div>
+            <h2>DaylitPlatinum</h2>
             <p>Platinum / Non-Human</p>
         </div>
 
         <div class="panel gold-side">
-            <div class="character-box">Image 2 Here</div>
+            <div class="character-box"></div>
             <h2>SunlitGold</h2>
             <p>Gold-Silver alloy / Non-Human</p>
         </div>
 
-        <div class="panel gold-side">
-            <div class="character-box">Image 3 Here</div>
+        <div class="panel silver-side">
+            <div class="character-box"></div>
             <h2>MoonlitSilver</h2>
             <p>Mercury-Silver alloy / Non-Human</p>
         </div>
     </div>
 
     <nav>
-        <button>Login</button>
-        <button>Gallery</button>
-        <button>Calendar</button>
-        <button style="color: #c084fc;">AI Gen</button>
+        <a href="gallery.html">Gallery</a>
+        <a href="calendar.html">Calendar</a>
     </nav>
 
 </body>
